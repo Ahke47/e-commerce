@@ -35,6 +35,8 @@ Route::get("removecart/{id}",[ProductController::class,'removeCart']);
 Route::get("ordernow",[ProductController::class,'orderNow']); 
 Route::post("orderplace",[ProductController::class,'orderPlace']);
 Route::get("myorders",[ProductController::class,'myOrders']);
+Route::get('/signup','RegisterController@index')->name('Signup');
+Route::get('/signup','RegisterController@create')->name('Submit');
  
 
 
